@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive Cafe</title>
+    <style>
+        nav {
+            background-color: #ece8df;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: rgb(2, 0, 0);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ca9c4c;
+        }
+
+        nav a:active {
+            color: #797878;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .video-section,
+        .text-section {
+            flex: 1 1 50%;
+        }
+
+        .video-section {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-section video {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-section {
+            background-color: #fff;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h1 {
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .text-section p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 30%; /* Adjusted width to fit three cards side by side */
+            border-radius: 5px;
+            margin: 1%; /* Added margin for spacing between cards */
+            float: left; /* Float the cards to make them appear side by side */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+        }
+
+        .cardcontainer {
+            padding: 2px 16px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="about2.html">Our Story</a></li>
+        <li><a href="contact2.html">Contact</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="mocktail.html">Mocktails</a></li>
+        <li><a href="home.html">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="video-section">
+        <video autoplay muted loop>
+            <source src="mocktailvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-section">
+        <h1>Experience the perfect blend of taste and refreshment!</h1>
+        <p>At Thrive Cafe, we offer a delightful selection of premium mocktails crafted with the finest ingredients and creative blends.</p>
+        <p>Indulge in our refreshing Virgin Mojito, fruity Watermelon Agua Fresca, and tangy Strawberry Basil Lemonade.</p>
+        <p>Experience our exotic Pineapple Coconut Cooler, crisp Cucumber Mint Cooler, and vibrant Berry Sparkler. Each mocktail is carefully crafted to elevate your taste experience.</p>
+        <center><h3 style="color: #ca9c4c;">Scroll to know more ...</h3></center>
+    </div>
+</div>
+</br></br></br>
+<center><h2>Explore the variety of mocktails waiting for you Thrive</h2></center>
+</br></br>
+<div class="container">
+    <div class="card">
+        <img src="virginmojito.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Virgin Mojito</b></h4> 
+        </br>
+            <p>Muddle lime and mint, add simple syrup, ice, and top with club soda.</p>        
+        </div>
+    </div>
+    <div class="card">
+        <img src="watermelonaguafresca.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Watermelon Agua Fresca</b></h4> 
+            <p>Blend watermelon, lime juice, and honey, strain, mix with water, serve over ice.</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="strawberrybasillemonade.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+             <h4><b>Strawberry Basil Lemonade</b></h4> 
+            <p>Blend strawberries, basil, lemon juice, and honey, strain, mix with water, serve over ice.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <img src="pineapplecoconutcooler.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Pineapple Coconut Cooler</b></h4> 
+            <p>Shake pineapple juice, coconut milk, lime juice, and syrup, strain over ice, top with club soda.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="cucumbermintcooler.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Cucumber Mint Cooler</b></h4> 
+            <p>Muddle cucumber and mint with lime juice and syrup, add ice, top with club soda, garnish.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="berrysparkler.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Berry Sparkler</b></h4> 
+            <p>Muddle mixed berries with lemon juice and syrup, add ice, top with sparkling water, garnish.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html> 

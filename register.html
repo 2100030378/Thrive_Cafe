@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Navbar Styles */
+nav {
+    background-color: #e4e3e3;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: rgb(2, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #ca9c4c;
+}
+
+nav a:active {
+    color: #797878;
+}  
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+/* Body and HTML Styles */
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Background Image Styles */
+.bg-img {
+    background-image: url("logregimg.png");
+    min-height: 430px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Form Container Styles */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/* Input Field Styles */
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Submit Button Styles */
+.btn {
+    background-color: #6F4E37;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cof.html">Coffee</a></li>
+    <li><a href="des.html">Deserts</a></li>
+    <li><a href="mock.html">Mocktails</a></li>
+    <li><a href="login.html">Login/Register</a></li>
+  </ul>
+</nav>
+
+<br><br>
+<div class="bg-img">
+  <form id="registerForm" class="container">
+    <h1>Register</h1>
+
+    <label for="email"><b></b></label>
+    <input type="email" placeholder="Email" name="email" required>
+
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Password" name="psw" required>
+
+    <label for="psw-repeat"><b></b></label>
+    <input type="password" placeholder="Re-type Password" name="psw-repeat" required>
+
+    <button type="submit" class="btn">Register</button>
+  </form>
+</div>
+
+<p>Already Registered?</p>
+<a href="login.html"><button class="btn">Login Now!</button></a>
+
+<script>
+  document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    // Add your registration logic here (e.g., AJAX request to server)
+    // If registration is successful, redirect to the login page
+    window.location.href = 'login.html';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+  nav {
+      background-color: #e4e3e3;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+   
+  nav ul { 
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  nav a {
+      color: rgb(2, 0, 0);
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  nav a:hover {
+    color: #ca9c4c;
+  }
+
+  nav a:active {
+    color: #797878;
+  }  
+  nav a {
+    transition: color 0.3s ease;
+  }
+
+</style>
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("homeimg.png");
+  
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
+<style>
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
+
+<style>
+
+
+
+.center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            margin: 0;
+        }
+
+        .container {
+            display: inline-block;
+        }
+
+        .typed-out {
+            overflow: hidden;
+            border-right: .15em solid rgb(241, 241, 241);
+            white-space: nowrap;
+            animation: typing 3s forwards;
+            font-size: 1.6rem;
+            color: rgb(0, 0, 0);
+            width: 0;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        .button-container {
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        .rounded-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            border: 2px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            outline: none;
+        }
+
+        .rounded-button:hover {
+            background-color: rgba(9, 0, 0, 0.2);
+            color: #ca9c4c;
+        }
+
+        .rounded-button:active {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #797878;
+        }
+</style>
+
+<nav>
+
+  <ul>
+    
+      <li><a href="home2.html">Home</a></li>
+
+      <li><a href="about2.html">Our Story</a></li>
+
+      <li><a href="contact2.html">Contact</a></li>
+
+      <li><a href="coffee.html">Coffee</a></li>
+
+      <li><a href="desserts.html">Deserts</a></li>
+
+      <li><a href="mocktail.html">Mocktails</a></li>
+
+      <li><a href="home.html">Logout</a></li>
+
+  </ul>
+
+</nav>
+
+
+<body>
+  <div class="bg">
+  </div>
+</body>
+
+</br>
+
+
+
+<div class="center-content">
+  <h1>Welcome to Thrive,</h1>
+  <br>
+          <div class="container">
+      <div class="typed-out">Discover the perfect blend of comfort and quality at Thrive.</div>
+      <div class="typed-out">Thrive Café is a haven of culinary excellence, offering exceptional </br>coffee, mocktails, desserts, and savory delights, meticulously crafted for your enjoyment.</div>
+  </div>
+</br>
+  <div class="button-container">
+    <a href="coffee.html" class="rounded-button">Explore coffee world</a>
+  </div>
+</div>
+
+</br>
+
+</br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="coffee.html">
+      <img src="cofeeimg.jpeg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Savor Thrive Café's mocktails—refreshing, delightful, and expertly crafted!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="mocktail.html">
+      <img src="mocktailimg.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Try Thrive Café's mocktails for a refreshingly delightful and expertly crafted experience!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="desserts.html">
+      <img src="dessertsimg.jpeg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Indulge in Thrive Café's desserts—exquisite treats meticulously crafted for your enjoyment!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pizzas.html">
+      <img src="pizzaimg.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Relish Thrive Café's pizzas—crafted with precision to tantalize your taste buds!e</div>
+  </div>
+</div>

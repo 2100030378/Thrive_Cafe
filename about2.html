@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Image Half Text</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        nav {
+            background-color: #ece8df;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: rgb(2, 0, 0);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ca9c4c;
+        }
+
+        nav a:active {
+            color: #e2ba63;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .image, .text {
+            flex: 1;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoomOutImage 5s forwards;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .text h1 {
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @keyframes zoomOutImage {
+            0% {
+                transform: scale(0.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="about2.html">Our Story</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="mocktail.html">Mocktails</a></li>
+            <li><a href="home.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="image">
+            <img src="aboutus.jpeg" alt="Description of the image">
+        </div>
+        <div class="text">
+            <h1>Our Story</h1>
+            <p>Welcome to Thrive Café, where culinary passion and innovation converge to create an unforgettable dining experience. Nestled in the heart of the city, our café is dedicated to providing a warm and inviting atmosphere, perfect for enjoying a moment of relaxation or gathering with friends and family.
+            <br><br>
+            At Thrive Café, we take pride in our expertly crafted menu, featuring a diverse range of offerings to suit every palate. Our coffee is a rich, aromatic delight, meticulously brewed to perfection, ensuring each sip is a moment of pure bliss. For those seeking a refreshing alternative, our mocktails are a burst of flavor, expertly blended to invigorate and refresh.
+            <br><br>
+            Join us at Thrive Café, where every visit is a celebration of great taste, quality, and community. We look forward to welcoming you and making your time with us truly special.</p>
+        </div>
+    </div>
+</body>
+</html>

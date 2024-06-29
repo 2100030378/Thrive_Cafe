@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+  nav {
+      background-color: #ece8df;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+   
+  nav ul { 
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  nav a {
+      color: rgb(2, 0, 0);
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  nav a:hover {
+    color: #ca9c4c;
+  }
+
+  nav a:active {
+    color: #e2ba63;
+  }  
+  nav a {
+    transition: color 0.3s ease;
+  }
+
+</style>
+
+<nav>
+
+  <ul>
+    
+      <li><a href="home2.html">Home</a></li>
+
+      <li><a href="about2.html">Our Story</a></li>
+
+      <li><a href="contact2.html">Contact</a></li>
+
+      <li><a href="coffee.html">Coffee</a></li>
+
+      <li><a href="desserts.html">Deserts</a></li>
+
+      <li><a href="mocktail.html">Mocktails</a></li>
+
+      <li><a href="home.html">Logout</a></li>
+
+  </ul>
+
+</nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, white , beige);
+          }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color:#e6dac3;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ca9c4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>

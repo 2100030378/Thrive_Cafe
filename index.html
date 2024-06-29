@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Thrive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav {
+            background-color: #e4e3e3;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul { 
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: rgb(2, 0, 0);
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ca9c4c;
+        }
+
+        nav a:active {
+            color: #797878;
+        }
+
+        nav a {
+            transition: color 0.3s ease;
+        }
+
+        body {
+            background: url('landngimg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Trebuchet MS', sans-serif; 
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .container {
+            display: inline-block;
+        }
+
+        .typed-out {
+            overflow: hidden;
+            border-right: .15em solid rgb(241, 241, 241);
+            white-space: nowrap;
+            animation: typing 3s forwards;
+            font-size: 1.6rem;
+            color: white;
+            width: 0;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        .button-container {
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        .rounded-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            outline: none;
+        }
+
+        .rounded-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ca9c4c;
+        }
+
+        .rounded-button:active {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #797878;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Mocktails</a></li>
+            <li><a href="login.html">Login/Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-content">
+        <h1>Welcome to Thrive,</h1>
+                <div class="container">
+            <div class="typed-out">Discover the perfect blend of comfort and quality at Thrive.</div>
+        </div>
+      </br>
+        <div class="button-container">
+          <a href="home.html" class="rounded-button">Explore Now</a>
+        </div>
+    </div>
+</body>
+</html>

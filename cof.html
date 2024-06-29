@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive Cafe</title>
+    <style>
+        nav {
+            background-color: #ece8df;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: rgb(2, 0, 0);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ca9c4c;
+        }
+
+        nav a:active {
+            color: #797878;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .video-section,
+        .text-section {
+            flex: 1 1 50%;
+        }
+
+        .video-section {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-section video {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-section {
+            background-color: #fff;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h1 {
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .text-section p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 30%; /* Adjusted width to fit three cards side by side */
+            border-radius: 5px;
+            margin: 1%; /* Added margin for spacing between cards */
+            float: left; /* Float the cards to make them appear side by side */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+        }
+
+        .cardcontainer {
+            padding: 2px 16px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cof.html">Coffee</a></li>
+        <li><a href="des.html">Desserts</a></li>
+        <li><a href="mock.html">Mocktails</a></li>
+        <li><a href="login.html">Login/Register</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="video-section">
+        <video autoplay muted loop>
+            <source src="Coffeevideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-section">
+        <h1>Explore the Coffee World !</h1>
+        <p>At Thrive Cafe, we serve a selection of premium coffees crafted with high-quality, sustainably sourced beans.</p>
+        <p>Enjoy our rich and bold espresso, creamy lattes, luxurious cappuccinos, and mellow americanos. </p>
+        <p>Treat yourself to a sweet mocha, strong macchiato, refreshing cold brew, or a rich flat white. Each cup is made with precision and passion to delight every coffee enthusiast.</p>
+        <center><h3 style="color: #ca9c4c;">Scroll to know more ...</h3></center>
+    </div>
+</div>
+</br></br></br>
+<center><h2>Explore the variety of coffees waiting for you Thrive</h2></center>
+</br></br>
+<div class="container">
+    <div class="card">
+        <img src="espresso.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Espresso</b></h4> 
+            <p>A concentrated coffee made by forcing hot water through finely-ground coffee beans. It has a rich, intense flavor and a layer of golden crema on top.</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="latte.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Latte</b></h4> 
+            <p>Made with a shot of espresso and steamed milk, topped with a small amount of milk foam. It has a creamy texture with a balanced coffee flavor.</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="cappuccino.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Cappuccino</b></h4> 
+            <p>Prepared with equal parts of espresso, steamed milk, and milk foam. It has a strong coffee flavor with a luxurious, frothy texture.</p> 
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <img src="americano.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Americano</b></h4> 
+            <p>Made by diluting a shot of espresso with hot water. It has a milder flavor than espresso but retains its boldness.</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="mocha.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Mocha</b></h4> 
+            <p>A combination of espresso, steamed milk, and chocolate syrup, often topped with whipped cream. It offers a perfect balance of coffee and chocolate flavors.            </p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="macchiato.jpeg" alt="Avatar">
+        <div class="cardcontainer">
+            <h4><b>Macchiato</b></h4> 
+            <p>Espresso "stained" with a small amount of steamed milk. It has a strong coffee flavor with a hint of creaminess from the milk.</p> 
+        </div>
+    </div>
+</div>
+</body>
+</html> 

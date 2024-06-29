@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+  nav {
+      background-color: #e4e3e3;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+   
+  nav ul { 
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  nav a {
+      color: rgb(2, 0, 0);
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  nav a:hover {
+    color: #ca9c4c;
+  }
+
+  nav a:active {
+    color: #797878;
+  }  
+  nav a {
+    transition: color 0.3s ease;
+  }
+
+</style>
+
+<nav>
+
+  <ul>
+    
+      <li><a href="home.html">Home</a></li>
+
+      <li><a href="about.html">Our Story</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+      <li><a href="cof.html">Coffee</a></li>
+
+      <li><a href="des.html">Deserts</a></li>
+
+      <li><a href="mock.html">Mocktails</a></li>
+
+      <li><a href="login.html">Login/Register</a></li>
+
+  </ul>
+
+</nav>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Opening Hours</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .card {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .timing {
+        margin-bottom: 15px;
+    }
+    .contact {
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="title">
+        <h2>Welcome to Thrive!</h2>
+    </div>
+    <div class="timing">
+        <h3>Opening Hours:</h3>
+        <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+        <p>Saturday - Sunday: 9:00 AM - 9:00 PM</p>
+    </div>
+    <div class="contact">
+        <p>Closed on Public Holidays</p>
+        <p>For inquiries, reservations, or catering services,</p>
+        <p>Contact us at:</p>
+        <p>[spoorthysaienelluri@gmail.com]  |  [Done using HTML & CSS Only]  | [Just a staic web application, not connected to backend]</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, white , beige);
+          }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color:#e6dac3;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ca9c4c;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
